@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, StatusBar } from 'react-native';
 
 const page2 = () => {
-    const {tit,btn,tit_w,like,mid,mid_w,line,img,img_2} = style;
+    const {tit,btn,tit_w,like,mid,mid_w,mid_w_2,line,img,img_2} = style;
     return(
         <View>
+          <StatusBar barStyle='light-content' />
           <View style={[tit]}>
             <Image source={require('./img/btn_back.png')} style={[btn]} />
             <Text style={[tit_w]}>Hearthstone</Text>
@@ -12,7 +13,7 @@ const page2 = () => {
           </View>
           <View style={[mid]}>
             <Text style={[mid_w]}>LIVE</Text>
-            <Text style={[mid_w]}>RECENT</Text>
+            <Text style={[mid_w_2]}>RECENT</Text>
           </View>
           <View style={[line]}>
           </View>
@@ -63,6 +64,13 @@ const style = {
         marginTop:15,
         fontSize:13,
         color:'rgb(100,65,165)',
+    },
+    mid_w_2:{
+        textAlign:'center',
+        width:187.5,
+        marginTop:15,
+        fontSize:13,
+        color:'rgb(187,187,187)',
     },
     line:{
         height:5,

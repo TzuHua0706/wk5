@@ -1,10 +1,12 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, StatusBar} from 'react-native';
+
 
 const page1 = () => {
     const {pur,word} = style;
     return(
         <View style={[pur]}>
+          <StatusBar hidden />
           <Image source={require('./img/logo_twitch.png')} style={[word]} />
         </View>
     );

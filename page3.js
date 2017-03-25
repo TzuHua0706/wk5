@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image,StatusBar} from 'react-native';
 
 const page3 = () => {
     const {tit,search,search_img,search_img_2,search_w,row,line,img,footer,btn,footer_w_pur,footer_w} = style;
     return(
         <View>
+          <StatusBar barStyle='light-content' />
           <View style = {[tit,row]}>
             <View style = {[search,row]}>
               <Image source={require('./img/icon_search.png')} style={[search_img]} />
